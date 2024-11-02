@@ -52,8 +52,8 @@ The `config.lua` file allows you to modify:
 ```lua
 Config.Vests = {
     kevlar_vest = {
-        durability = 10,            -- Maximum durability
-        damageReduction = 0.5,      -- Damage reduction (50%)
+        durability = 6,            -- Maximum durability
+        damageReduction = 0.3,      -- Damage reduction (30%)
         appearance = {
             component = 9,          -- Component ID
             drawable = 6,           -- Drawable ID
@@ -80,19 +80,16 @@ Config.Vests = {
 
 ## Vest Characteristics (all modifiable)
 - **Kevlar Vest**
-  - Durability: 10 impacts
-  - Protection: 50% damage reduction
-  - Light and versatile
+  - Durability: 6 impacts
+  - Protection: 30% damage reduction
 
 - **Ceramic Vest**
-  - Durability: 7 impacts
+  - Durability: 4 impacts
   - Protection: 65% damage reduction
-  - Medium protection, medium durability
 
 - **Steel Vest**
-  - Durability: 5 impacts
-  - Protection: 80% damage reduction
-  - Maximum protection, low durability
+  - Durability: 8 impacts
+  - Protection: 50% damage reduction
 
 ## 🛠️ Technical Features
 - 50% damage reduction
@@ -167,8 +164,8 @@ Le fichier `config.lua` vous permet de modifier :
 ```lua
 Config.Vests = {
     kevlar_vest = {
-        durability = 10,            -- Durabilité maximale
-        damageReduction = 0.5,      -- Réduction des dégâts (50%)
+        durability = 6,            -- Durabilité maximale
+        damageReduction = 0.3,      -- Réduction des dégâts (50%)
         appearance = {
             component = 9,          -- ID du composant
             drawable = 6,           -- ID du drawable
@@ -195,19 +192,16 @@ Config.Vests = {
 
 ## Caractéristiques des gilets (tout est modifiable)
 - **Gilet Kevlar**
-  - Durabilité : 10 impacts
-  - Protection : 50% de réduction des dégâts
-  - Léger et polyvalent
+  - Durabilité : 6 impacts
+  - Protection : 30% de réduction des dégâts
 
 - **Gilet Céramique**
-  - Durabilité : 7 impacts
+  - Durabilité : 4 impacts
   - Protection : 65% de réduction des dégâts
-  - Protection moyenne, durabilité moyenne
 
 - **Gilet Acier**
-  - Durabilité : 5 impacts
-  - Protection : 80% de réduction des dégâts
-  - Protection maximale, durabilité faible
+  - Durabilité : 8 impacts
+  - Protection : 50% de réduction des dégâts
 
 ## 🛠️ Caractéristiques Techniques
 - Réduction des dégâts de 50%
