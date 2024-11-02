@@ -9,6 +9,7 @@ server_script '@oxmysql/lib/MySQL.lua'
 
 client_scripts {
   '@es_extended/locale.lua',
+  'config.lua',
   'client/client.lua'
 }
 
