@@ -42,7 +42,6 @@ The images are already included in the `images` folder. Simply copy them to:
 ox_inventory/web/images/
 ```
 
-Included images:
 ![kevlar_ceramic_steel_vest](https://github.com/user-attachments/assets/e877e021-1cb3-4254-98c4-0e704f128d56)
 
 ### For other inventory systems
@@ -157,7 +156,6 @@ Les images sont incluses dans le dossier `images`. Il suffit de les copier dans 
 ox_inventory/web/images/
 ```
 
-Images incluses :
 ![kevlar_ceramic_steel_vest](https://github.com/user-attachments/assets/e877e021-1cb3-4254-98c4-0e704f128d56)
 
 ### Pour les autres systèmes d'inventaire
