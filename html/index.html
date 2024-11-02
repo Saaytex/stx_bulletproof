@@ -1,0 +1,62 @@
+<!-- html/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #vest-durability {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: none;
+        }
+        .durability-bar {
+            width: 100px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .durability-fill {
+            height: 100%;
+            background-color: #2ecc71;
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="vest-durability">
+        <div>Gilet: <span id="vest-type"></span></div>
+        <div>Durabilité: <span id="durability-value"></span></div>
+        <div class="durability-bar">
+            <div class="durability-fill" id="durability-bar-fill"></div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('message', function(event) {
+            var item = event.data;
+            
+            if (item.type === "updateVest") {
+                if (item.display) {
+                    document.getElementById('vest-durability').style.display = 'block';
+                    document.getElementById('vest-type').textContent = item.vestLabel;
+                    document.getElementById('durability-value').textContent = item.durability;
+                    
+                    // Update progress bar
+                    var percentage = (item.durability / item.maxDurability) * 100;
+                    document.getElementById('durability-bar-fill').style.width = percentage + '%';
+                } else {
+                    document.getElementById('vest-durability').style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
