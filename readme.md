@@ -5,7 +5,6 @@ A realistic bulletproof vest system for FiveM with user interface and durability
 ## 📺 Preview
 
 [Watch on YouTube](https://youtu.be/lB8A9YSvpiU)
-[![Video Preview](https://img.shields.io/badge/YouTube-Preview-red)](https://youtu.be/lB8A9YSvpiU)
 
 ## 📋 Features
 
