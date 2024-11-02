@@ -165,7 +165,7 @@ Le fichier `config.lua` vous permet de modifier :
 Config.Vests = {
     kevlar_vest = {
         durability = 6,            -- Durabilité maximale
-        damageReduction = 0.3,      -- Réduction des dégâts (50%)
+        damageReduction = 0.3,      -- Réduction des dégâts (30%)
         appearance = {
             component = 9,          -- ID du composant
             drawable = 6,           -- ID du drawable
