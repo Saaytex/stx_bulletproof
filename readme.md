@@ -92,7 +92,7 @@ Config.Vests = {
   - Protection: 50% damage reduction
 
 ## 🛠️ Technical Features
-- 50% damage reduction
+- damage reduction with %
 - Responsive NUI interface
 - Visual durability progress bar
 - Torso impact detection system
@@ -204,7 +204,7 @@ Config.Vests = {
   - Protection : 50% de réduction des dégâts
 
 ## 🛠️ Caractéristiques Techniques
-- Réduction des dégâts de 50%
+- Réduction des dégâts par %
 - Interface NUI responsive
 - Barre de progression visuelle de la durabilité
 - Système de détection d'impact au torse
