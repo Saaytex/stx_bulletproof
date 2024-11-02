@@ -35,20 +35,18 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 ```
 
 ## 🖼️ Inventory Images
-For ox_inventory users
-The images are already included in the images folder. Simply copy them to:
-Copyox_inventory/web/images/
+
+### For ox_inventory users
+The images are already included in the `images` folder. Simply copy them to:
+```
+ox_inventory/web/images/
+```
+
 Included images:
+![kevlar_ceramic_steel_vest](https://github.com/user-attachments/assets/e877e021-1cb3-4254-98c4-0e704f128d56)
 
-kevlar_vest.png
-![kevlar_vest](https://github.com/user-attachments/assets/2ca8fe29-72ba-4b46-932d-5a7570577d8f)
-ceramic_vest.png
-![ceramic_vest](https://github.com/user-attachments/assets/999190b4-4f93-4eb8-9504-897d4dd62e0b)
-steel_vest.png
-![steel_vest](https://github.com/user-attachments/assets/13ad0239-36ce-4355-a243-71296841f5dd)
-
-For other inventory systems
-If you're using a different inventory system, you can find the item images in the images folder. Simply copy these images to your inventory system's image directory following your inventory script's documentation.
+### For other inventory systems
+If you're using a different inventory system, you can find the item images in the `images` folder. Simply copy these images to your inventory system's image directory following your inventory script's documentation.
 
 ## Configuration
 The `config.lua` file allows you to modify:
@@ -150,6 +148,21 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
     ('ceramic_vest', 'Gilet Céramique', 1),
     ('steel_vest', 'Gilet Acier', 1);
 ```
+
+## 🖼️ Images d'Inventaire
+
+### Pour les utilisateurs de ox_inventory
+Les images sont incluses dans le dossier `images`. Il suffit de les copier dans :
+```
+ox_inventory/web/images/
+```
+
+Images incluses :
+![kevlar_ceramic_steel_vest](https://github.com/user-attachments/assets/e877e021-1cb3-4254-98c4-0e704f128d56)
+
+### Pour les autres systèmes d'inventaire
+Si vous utilisez un système d'inventaire différent, vous trouverez les images des items dans le dossier `images`. Il vous suffit de copier ces images dans le répertoire d'images de votre système d'inventaire en suivant la documentation de votre script d'inventaire.
+
 
 ## Configuration
 Le fichier `config.lua` vous permet de modifier :
