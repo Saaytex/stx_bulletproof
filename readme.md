@@ -1,84 +1,200 @@
-# FiveM Bulletproof Vest System
-
+# FiveM Bulletproof Vest System [EN]
 A realistic bulletproof vest system for FiveM with user interface and durability system.
 
 ## 📺 Preview
-
 [Watch on YouTube](https://youtu.be/lB8A9YSvpiU)
 
-## 📋 Features
+## Description
+A realistic bulletproof vest system for FiveM offering three different protection levels, each with its own durability and protection characteristics. The script includes an intuitive user interface showing vest durability and a realistic damage system.
 
-- 3 different types of bulletproof vests (Kevlar, Ceramic, Steel)
-- Unique durability system for each vest type
-- Real-time UI displaying durability
-- Equipment animation
-- Damage reduction based on vest type
-- Full ESX integration
+## Features
+- 3 different types of vests (Kevlar, Ceramic, Steel)
+- Advanced durability system
+- Realistic damage protection
+- Intuitive user interface
+- Fully configurable
+- ESX compatible
 
-## 🚀 Installation
-
-1. Download the files
-2. Place the `stx_bulletproof` folder in your `resources` directory
-3. Add `ensure stx_bulletproof` to your `server.cfg`
-4. Import `stx_bulletproof.sql` into your database
-
-### ⚙️ Dependencies
-
+## ⚙️ Requirements
+- ESX Framework
 - es_extended
 - oxmysql
 
-## 💾 Vest Configuration
+## Installation
+1. **Download the files** into your resources folder
+2. **Add** to your `server.cfg`:
+```cfg
+ensure stx_bulletproof
+```
+3. **Import** items into your database:
+```sql
+INSERT INTO `items` (`name`, `label`, `weight`) VALUES
+    ('kevlar_vest', 'Kevlar Vest', 1),
+    ('ceramic_vest', 'Ceramic Vest', 1),
+    ('steel_vest', 'Steel Vest', 1);
+```
 
-You can modify vest properties in `client.lua`:
-
+## Configuration
+The `config.lua` file allows you to modify:
 ```lua
-local bulletproof = {
-    {material = "kevlar_vest", durability = 10},
-    {material = "ceramic_vest", durability = 7},
-    {material = "steel_vest", durability = 5}
+Config.Vests = {
+    kevlar_vest = {
+        durability = 10,            -- Maximum durability
+        damageReduction = 0.5,      -- Damage reduction (50%)
+        appearance = {
+            component = 9,          -- Component ID
+            drawable = 6,           -- Drawable ID
+            texture = 0,           -- Texture ID
+            palette = 0            -- Palette ID
+        }
+    },
+    -- Other vest configurations...
 }
 ```
 
-## 🎮 Usage
+## Usage
+1. Give vests via admin commands or your inventory system
+2. Players can use the vest from their inventory
+3. Interface displays remaining durability
+4. Vest automatically destroys when durability reaches 0
 
-1. Obtain a vest through inventory
-2. Use the vest to equip it
-3. Vest durability decreases with each impact
-4. Vest automatically deactivates once durability is depleted
+## Admin Commands
+```
+/giveitem [ID] kevlar_vest [quantity]
+/giveitem [ID] ceramic_vest [quantity]
+/giveitem [ID] steel_vest [quantity]
+```
+
+## Vest Characteristics (all modifiable)
+- **Kevlar Vest**
+  - Durability: 10 impacts
+  - Protection: 50% damage reduction
+  - Light and versatile
+
+- **Ceramic Vest**
+  - Durability: 7 impacts
+  - Protection: 65% damage reduction
+  - Medium protection, medium durability
+
+- **Steel Vest**
+  - Durability: 5 impacts
+  - Protection: 80% damage reduction
+  - Maximum protection, low durability
 
 ## 🛠️ Technical Features
-
 - 50% damage reduction
 - Responsive NUI interface
 - Visual durability progress bar
 - Torso impact detection system
 - Realistic equipment animation
 
-## 📊 Vest Types and Durability
-
-| Vest Type | Durability | Description |
-|-----------|------------|-------------|
-| Kevlar | 10 | Best durability |
-| Ceramic | 7 | Medium durability |
-| Steel | 5 | Low durability |
-
-## 🔧 Customization
-
-You can modify the NUI interface appearance by editing `html/index.html`.
-
-To modify vest properties:
-1. Adjust durability values in `client.lua`
-2. Modify damage reduction in the `vest:equip` event function
-3. Customize animations through the `animation()` function
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
 ## 📞 Support
-
 For questions or issues:
 - Join our Discord [\[link to be added\]](https://discord.com/invite/reJ8V49A4f)
 
+## Credits
+Developed by Saaytex
+
 ---
-Developed with ❤️ for the FiveM community
+
+---
+
+# Système de Gilet Pare-balles FiveM [FR]
+Un système de gilet pare-balles réaliste pour FiveM avec interface utilisateur et système de durabilité.
+
+## 📺 Aperçu
+[Regarder sur YouTube](https://youtu.be/lB8A9YSvpiU)
+
+## Description
+Un système de gilet pare-balles réaliste pour FiveM offrant trois niveaux de protection différents, chacun avec ses propres caractéristiques de durabilité et de protection. Le script inclut une interface utilisateur intuitive montrant la durabilité du gilet et un système de dégâts réaliste.
+
+## Caractéristiques
+- 3 types de gilets différents (Kevlar, Céramique, Acier)
+- Système de durabilité avancé
+- Protection réaliste contre les dégâts
+- Interface utilisateur intuitive
+- Entièrement configurable
+- Compatible ESX
+
+## ⚙️ Prérequis
+- ESX Framework
+- es_extended
+- oxmysql
+
+## Installation
+1. **Téléchargez les fichiers** dans votre dossier resources
+2. **Ajoutez** à votre `server.cfg`:
+```cfg
+ensure stx_bulletproof
+```
+3. **Importez** les items dans votre base de données :
+```sql
+INSERT INTO `items` (`name`, `label`, `weight`) VALUES
+    ('kevlar_vest', 'Gilet Kevlar', 1),
+    ('ceramic_vest', 'Gilet Céramique', 1),
+    ('steel_vest', 'Gilet Acier', 1);
+```
+
+## Configuration
+Le fichier `config.lua` vous permet de modifier :
+```lua
+Config.Vests = {
+    kevlar_vest = {
+        durability = 10,            -- Durabilité maximale
+        damageReduction = 0.5,      -- Réduction des dégâts (50%)
+        appearance = {
+            component = 9,          -- ID du composant
+            drawable = 6,           -- ID du drawable
+            texture = 0,            -- ID de la texture
+            palette = 0             -- ID de la palette
+        }
+    },
+    -- Configurations des autres gilets...
+}
+```
+
+## Utilisation
+1. Donnez les gilets via les commandes admin ou votre système d'inventaire
+2. Les joueurs peuvent utiliser le gilet depuis leur inventaire
+3. L'interface affiche la durabilité restante
+4. Le gilet se détruit automatiquement quand sa durabilité atteint 0
+
+## Commandes Admin
+```
+/giveitem [ID] kevlar_vest [quantité]
+/giveitem [ID] ceramic_vest [quantité]
+/giveitem [ID] steel_vest [quantité]
+```
+
+## Caractéristiques des gilets (tout est modifiable)
+- **Gilet Kevlar**
+  - Durabilité : 10 impacts
+  - Protection : 50% de réduction des dégâts
+  - Léger et polyvalent
+
+- **Gilet Céramique**
+  - Durabilité : 7 impacts
+  - Protection : 65% de réduction des dégâts
+  - Protection moyenne, durabilité moyenne
+
+- **Gilet Acier**
+  - Durabilité : 5 impacts
+  - Protection : 80% de réduction des dégâts
+  - Protection maximale, durabilité faible
+
+## 🛠️ Caractéristiques Techniques
+- Réduction des dégâts de 50%
+- Interface NUI responsive
+- Barre de progression visuelle de la durabilité
+- Système de détection d'impact au torse
+- Animation réaliste d'équipement
+
+## 📞 Support
+Pour toute question ou problème :
+- Rejoignez notre Discord [\[lien à ajouter\]](https://discord.com/invite/reJ8V49A4f)
+
+## Crédits
+Développé par Saaytex
+
+---
+Développé avec ❤️ pour la communauté FiveM
