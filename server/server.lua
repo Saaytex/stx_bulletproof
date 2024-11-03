@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 ESX.RegisterUsableItem('kevlar_vest', function(source)
     local vest = 'kevlar_vest'
     useitem(vest, source)

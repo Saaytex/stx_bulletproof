@@ -1,3 +1,4 @@
+---@diagnostic disable: redundant-parameter
 local currentVest = nil
 
 -- Variables globales pour suivre l'état
