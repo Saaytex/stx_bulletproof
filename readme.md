@@ -3,7 +3,7 @@ A realistic bulletproof vest system for FiveM with user interface and durability
 
 ## 📺 Preview
 A video presentation of the script will soon be on my Youtube channel.
-[Watch on YouTube](https://www.youtube.com/@Saaytex)
+[Watch on YouTube](https://www.youtube.com/watch?v=V-Cbzsx1a50)
 
 ## Description
 A realistic bulletproof vest system for FiveM offering three different protection levels, each with its own durability and protection characteristics. The script includes an intuitive user interface showing vest durability and a realistic damage system.
@@ -115,7 +115,7 @@ Un système de gilet pare-balles réaliste pour FiveM avec interface utilisateur
 
 ## 📺 Aperçu
 Une vidéo présentation du script va pas tarder sur ma chaîne Youtube.
-[Watch on YouTube](https://www.youtube.com/@Saaytex)
+[Watch on YouTube](https://www.youtube.com/watch?v=V-Cbzsx1a50)
 
 ## Description
 Un système de gilet pare-balles réaliste pour FiveM offrant trois niveaux de protection différents, chacun avec ses propres caractéristiques de durabilité et de protection. Le script inclut une interface utilisateur intuitive montrant la durabilité du gilet et un système de dégâts réaliste.
