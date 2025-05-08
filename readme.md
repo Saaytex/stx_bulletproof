@@ -34,6 +34,29 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
     ('ceramic_vest', 'Ceramic Vest', 1),
     ('steel_vest', 'Steel Vest', 1);
 ```
+4. **Add** to ox_inventory in 'ox_inventory\data\items' :
+```
+	['kevlar_vest'] = {
+		label = 'Kevlar Vest',
+		weight = 100,
+		stack = false,
+		close = true,
+	},
+
+	['ceramic_vest'] = {
+		label = 'Ceramic Vest',
+		weight = 100,
+		stack = false,
+		close = true,
+	},
+
+	['steel_vest'] = {
+		label = 'Steel Vest',
+		weight = 100,
+		stack = false,
+		close = true,
+	},
+```
 
 ## 🖼️ Inventory Images
 
@@ -145,6 +168,29 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
     ('kevlar_vest', 'Gilet Kevlar', 1),
     ('ceramic_vest', 'Gilet Céramique', 1),
     ('steel_vest', 'Gilet Acier', 1);
+```
+4. **Ajoutez** à ox_inventory dans 'ox_inventory\data\items' :
+```
+	['kevlar_vest'] = {
+		label = 'Kevlar Vest',
+		weight = 100,
+		stack = false,
+		close = true,
+	},
+
+	['ceramic_vest'] = {
+		label = 'Ceramic Vest',
+		weight = 100,
+		stack = false,
+		close = true,
+	},
+
+	['steel_vest'] = {
+		label = 'Steel Vest',
+		weight = 100,
+		stack = false,
+		close = true,
+	},
 ```
 
 ## 🖼️ Images d'Inventaire
